@@ -21,7 +21,8 @@ const Bookings = () => {
         if (!data.error) {
           setBookings(data);
         } else {
-          navigate("home");
+          //logout and then navigate
+          navigate("/");
         }
       });
   }, [url, navigate]);
